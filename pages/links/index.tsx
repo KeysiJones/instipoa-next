@@ -16,7 +16,7 @@ const Links: NextPage = () => {
       {/* <Image className='rounded-xl' src="/salvador.jpg" alt="Imagem de Jesus Cristo" width={600} height={350} /> */}
       <div className='flex'>
         <Card
-          description='Links de todas as aulas de terca'
+          description='Links de todas as aulas de terça'
           name='Terça'
           link='/links/terca'
         />
