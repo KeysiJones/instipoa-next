@@ -1,4 +1,5 @@
 import { Card } from '../../components/card';
+import { CardsWrapper } from '../../components/CardsWrapper';
 
 type Course = {
   id: number;
@@ -41,14 +42,23 @@ const WeekDay = ({
   classes: Array<Course>;
   weekday: string;
 }) => {
+  const dayMap = {
+    terca: 'Terça',
+    quarta: 'Quarta',
+    quinta: 'Quinta',
+    sabado: 'Sábado',
+  };
   return (
-    <main className='flex flex-col text-center items-center h-[85vh] justify-center'>
-      <h1 className='text-7xl mb-20'>Aulas de {weekday}</h1>
-      <div className='flex'>
+    <main className='flex flex-col items-center justify-center h-[90vh] md:h-[78vh] text-center'>
+      <h1 className='my-5 text-4xl sm:mb-20 md:text-7xl'>
+        {/* @ts-ignore */}
+        Aulas de {dayMap[weekday]}
+      </h1>
+      <CardsWrapper>
         {classes.map((course) => (
           <Card name={course.nome} link={course.link} key={course.id} />
         ))}
-      </div>
+      </CardsWrapper>
     </main>
   );
 };

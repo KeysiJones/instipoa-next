@@ -1,7 +1,6 @@
 import type { NextPage } from 'next';
-import Link from 'next/link';
-import styles from '../../styles/Home.module.css';
-import { Card } from '../../components/card';
+import { Card } from '../../components/Card';
+import { CardsWrapper } from '../../components/CardsWrapper';
 
 export async function getServerSideProps(_context: any) {
   return {
@@ -11,10 +10,9 @@ export async function getServerSideProps(_context: any) {
 
 const Links: NextPage = () => {
   return (
-    <main className='flex flex-col text-center items-center h-[85vh] justify-center'>
-      <h1 className='text-7xl mb-20'>Links</h1>
-      {/* <Image className='rounded-xl' src="/salvador.jpg" alt="Imagem de Jesus Cristo" width={600} height={350} /> */}
-      <div className='flex'>
+    <main className='flex flex-col items-center justify-center h-[90vh] md:h-[78vh] text-center'>
+      <h1 className='my-5 text-4xl sm:mb-20 md:text-5xl lg:text-7xl'>Links</h1>
+      <CardsWrapper>
         <Card
           description='Links de todas as aulas de terça'
           name='Terça'
@@ -35,7 +33,7 @@ const Links: NextPage = () => {
           name='Sábado'
           link='/links/sabado'
         />
-      </div>
+      </CardsWrapper>
     </main>
   );
 };
