@@ -11,7 +11,7 @@ export async function getServerSideProps(_context: any) {
 const Links: NextPage = () => {
   return (
     <main className='flex flex-col items-center justify-center h-[90vh] md:h-[78vh] text-center'>
-      <h1 className='my-5 text-4xl font-bold sm:mb-20 md:text-5xl lg:text-7xl'>
+      <h1 className='my-5 text-4xl font-bold sm:mb-20 md:text-5xl lg:text-7xl text-[#1ad597]'>
         Links
       </h1>
       <CardsWrapper>
