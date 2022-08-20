@@ -49,10 +49,10 @@ const WeekDay = ({
     sabado: 'Sábado',
   };
   return (
-    <main className='flex flex-col items-center justify-center h-[90vh] md:h-[78vh] text-center'>
+    <main className='flex flex-col items-center justify-center h-auto sm:h-[90vh] md:h-[78vh] text-center'>
       <h1 className='mt-12 mb-5 text-4xl font-bold lg:mt-5 sm:mb-20 md:text-7xl text-[#1ad597]'>
         {/* @ts-ignore */}
-        Aulas de {dayMap[weekday]}
+        {dayMap[weekday]}
       </h1>
       <CardsWrapper>
         {classes.map((course) => (
