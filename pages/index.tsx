@@ -18,7 +18,7 @@ const Home: NextPage = () => {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <main className='flex flex-col items-center justify-center h-full text-center'>
-        <h1 className='mb-10 text-5xl sm:mb-20 lg:text-7xl'>
+        <h1 className='mb-10 text-5xl font-bold sm:mb-20 lg:text-7xl'>
           Instituto <br />
           Porto Alegre
         </h1>
