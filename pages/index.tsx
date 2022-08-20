@@ -23,7 +23,7 @@ const Home: NextPage = () => {
           Porto Alegre
         </h1>
         {/* <Image className='rounded-xl' src="/salvador.jpg" alt="Imagem de Jesus Cristo" width={600} height={350} /> */}
-        <CardsWrapper cols={3}>
+        <CardsWrapper>
           <Card
             name='Links de acesso'
             link='/links'
