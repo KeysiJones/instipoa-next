@@ -50,7 +50,7 @@ const WeekDay = ({
   };
   return (
     <main className='flex flex-col items-center justify-center h-[90vh] md:h-[78vh] text-center'>
-      <h1 className='my-5 text-4xl sm:mb-20 md:text-7xl'>
+      <h1 className='my-5 text-4xl font-bold sm:mb-20 md:text-7xl'>
         {/* @ts-ignore */}
         Aulas de {dayMap[weekday]}
       </h1>
