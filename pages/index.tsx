@@ -27,17 +27,17 @@ const Home: NextPage = () => {
           <Card
             name='Links de acesso'
             link='/links'
-            description='Links de todas as aulas do instituto'
+            description='Links de todas as aulas'
           />
           <Card
             name='Matricula'
             link='https://docs.google.com/forms/d/e/1FAIpQLSd0y43FbhjFRI62qL42DezLBjtwC6nhubskd_JVlxH3js4hbw/viewform'
-            description='Formulario de matricula do Instituto'
+            description='Formulário de matrícula'
           />
           <Card
             name='Sobre'
             link='https://keysijones.vercel.app'
-            description='Informacoes sobre o desenvolvedor'
+            description='Informações sobre o desenvolvedor'
           />
         </CardsWrapper>
       </main>
