@@ -42,7 +42,7 @@ const Home: NextPage = () => {
         </CardsWrapper>
       </main>
       <footer>
-        <p className='text-2xl text-center text-gray-700'>
+        <p className='text-xl text-center text-gray-700 lg:text-2xl'>
           *Desenvolvido por {''}
           <a
             className='italic font-bold underline'
