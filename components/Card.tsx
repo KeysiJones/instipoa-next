@@ -8,7 +8,7 @@ type Props = {
 
 const Card = ({ link, name, description }: Props) => (
   <Link href={link}>
-    <div className='hover:scale-[1.08] text-white transition-all bg-[#1ad597] cursor-grabbing rounded-xl [text-decoration:none] text-left lg:p-6 p-3 m-4 min-w-[300px]'>
+    <div className='hover:scale-[1.08] text-white transition-all bg-[#1ad597] cursor-grabbing lg:rounded-lg rounded-xl [text-decoration:none] text-left lg:p-6 p-3 m-4 min-w-[300px]'>
       <h2
         className={`text-2xl ${
           description ? 'font-medium' : 'font-normal'
